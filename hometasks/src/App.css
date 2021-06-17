@@ -36,3 +36,86 @@
     transform: rotate(360deg);
   }
 }
+
+.cards, .news-output {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.decomposition {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-output {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-top: 8px;
+  width: 800px;
+  font-size: 15px;
+}
+
+.new {
+  display: flex;
+}
+
+.new img{
+  margin-right: 10px;
+}
+
+.news-filter {
+  display: flex;
+  flex-direction: row;
+} 
+
+.filter-tag {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: #96addd;
+  font-weight: 600;
+  font-size: 19px;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.filter-tag-active {
+  color: #1c59d3;
+}
+
+.exchange-rate {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  /* margin-left: 60px; */
+}
+
+.exchange-rate-item {
+  display: flex;
+}
+
+.advertising {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  height: 100px;
+  
+}
+
+.advertising h3{
+  font-size: 22px;
+}
+
+.advertising-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

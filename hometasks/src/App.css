@@ -28,15 +28,6 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .cards, .news-output {
   display: flex;
   flex-direction: column;
@@ -86,6 +77,10 @@
   margin-left: 10px;
 }
 
+.filter-tag:focus {
+  color: #1c59d3;
+}
+
 .filter-tag-active {
   color: #1c59d3;
 }
@@ -106,7 +101,7 @@
   flex-direction: row;
   width: 800px;
   height: 100px;
-  
+  margin-top: 40px;
 }
 
 .advertising h3{
@@ -118,4 +113,77 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.logo {
+  position: relative;
+  right: 430px;
+  top: 50px;
+}
+
+.temp {
+  display: flex;
+  flex-direction: row;
+}
+
+.tempDayNight {
+  display: flex;
+  flex-direction: column;
+}
+
+li span {
+  color: rgb(163, 150, 150);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.wrapperForNewsBlocks {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 820px;
+  height: 300px;
+}
+
+.visited {
+  display: flex;
+  flex-direction: column;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.block a {
+  font-weight: bold;
+}
+
+.custom-input {
+  width: 600px;
+  border-color: rgb(219, 216, 24);
+}
+
+.search-button {
+  padding: 0;
+  border: none;
+  background-color: rgb(219, 216, 24);
+  width: 80px;
+  height: 30px;
+}
+
+.ether-button {
+  position: relative;
+  left: 130px;
+  bottom: 30px;
+}
+
+.search-links {
+  display: flex;
+  justify-content: space-between;
 }

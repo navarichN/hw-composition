@@ -1,3 +1,5 @@
+//компонент ExchangeRate отображает обменный курс указанных валют
+
 import {useState} from 'react';
 
 export default function ExchangeRate(props) {
@@ -8,8 +10,6 @@ export default function ExchangeRate(props) {
                 return response.json();
             })
             .then((data) => {
-                console.log('data in func:', data);
-                console.log('state:', data);
                 setState(data);
             });
     }
@@ -24,7 +24,6 @@ export default function ExchangeRate(props) {
                         </div>
                     )
                 })}
-                {/* <button onClick={()=>getExchangeRate()}>Нажать</button> */}
             </div>
         )
     }

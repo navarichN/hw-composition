@@ -1,3 +1,6 @@
+//компонент Advertising отвечает за отображение рекламы
+
+
 import {useState} from 'react';
 
 export default function Advertising(props) {

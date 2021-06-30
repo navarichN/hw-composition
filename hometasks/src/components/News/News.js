@@ -1,3 +1,5 @@
+//компонент News отображает блок с новостями, показываемыми в зависимости от выбранного фильтра
+
 import {useState} from 'react';
 
 
@@ -5,12 +7,10 @@ export default function News(props) {
     const [selectedFilter, setFilter] = useState('Сейчас в СМИ');
 
     let news = props.news;
-
+    let buttons = document.querySelectorAll('.filter-tag');
     function filterNews(e) {
-        console.log('news:',news)
-        console.log('props:',props)
         setFilter(e.target.innerText)
-        console.log(selectedFilter)
+        document.querySelector('.filter-tag').classList.remove('filter-tag-active');
     }
 
     return(

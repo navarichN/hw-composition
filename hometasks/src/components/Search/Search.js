@@ -1,3 +1,6 @@
+//компонент Search отображает поле ввода для поиска любой информации в базе данных яндекс.
+//Имеет ссылки для перехода на страницу поиска чего-либо конкретного типа, например картинок
+
 import {useState} from 'react';
 
 export default function Search(props) {
@@ -41,8 +44,8 @@ export default function Search(props) {
                     return <a href = {el.link}>{el.name}</a>
                 })}
             </div>
-            <input></input>
-            <button>Найти</button>
+            <input className="custom-input"></input>
+            <button className="search-button">Найти</button>
         </div>
     )
 }
